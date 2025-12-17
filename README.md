@@ -2,6 +2,9 @@
 
 LangGraph-powered, bilingual Streamlit app that interviews users about their retirement goals, infers investment style, and visualizes readiness with actionable suggestions.
 
+<img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/3bb1ffa7-889e-4969-8f34-3ee30443a064" />
+
+
 ### How It Works (Conceptual Overview)
 - **Interview Agent (LangGraph):** `StateGraph` with an extractor node (structured Pydantic output via `ChatOpenAI`) and an interviewer node that keeps asking for missing fields until the profile is complete.
 - **Streaming UX:** Chat responses and advice stream token-by-token for conversational feel.
