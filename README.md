@@ -58,9 +58,3 @@ Open http://localhost:8501 to interact with the coach.
 cd retirement_agent
 uv run pytest
 ```
-
-### Teaching Tips for Your Video
-- Show the **LangGraph state machine** (extractor → interviewer → END) and how `_missing_profile_fields` drives the prompt.
-- Highlight **structured output** with `UserProfile` to automatically merge user data.
-- Demonstrate **streaming chat** (`stream_chat_response`) and the difference between onboarding chat vs. advice chat.
-- Walk through the **projection math** and how inflation/return sliders affect the readiness score and food index.
