@@ -1,5 +1,3 @@
-North-Star-AI App Back-up
-
 import asyncio
 import streamlit as st
 import pandas as pd
