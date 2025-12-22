@@ -1076,13 +1076,11 @@ else:
     inv_style = p.get("investment_style", "Standard")
 
     st.markdown(f"## {t['calc_header']}")
-    
+
     # Use fragment for controls to enable instant updates
-    c1, c2, c3, c4 = st.columns(4)
-    with c1:
-        age, retire_age, curr_sav, month_sav, rate, inflation, growth, target_expense = simulation_controls(
-            def_age, def_retire, def_curr, def_month, def_target, inferred_rate, defaults, sym, t, curr_conf
-        )
+    age, retire_age, curr_sav, month_sav, rate, inflation, growth, target_expense = simulation_controls(
+        def_age, def_retire, def_curr, def_month, def_target, inferred_rate, defaults, sym, t, curr_conf
+    )
 
     df = calculate_projection(age, retire_age, curr_sav, month_sav, rate, inflation, growth, st.session_state["current_currency"])
     
